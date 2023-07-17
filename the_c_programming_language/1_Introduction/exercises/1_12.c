@@ -5,12 +5,14 @@
 
 void main()
 {
-    int c;
+    int c, before;
     
     while ((c = getchar()) != EOF) 
     {
-        if (c == ' ' || c == '\n' || c == '\t')
+        if ((c == ' ' || c == '\t'))
             c = '\n';
-        printf("%c", c);
+        if (c != '\n' || before != '\n')
+            printf("%c", c);
+        before = c;
     }
 }
