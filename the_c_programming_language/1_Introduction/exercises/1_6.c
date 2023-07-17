@@ -2,6 +2,10 @@
 
 void main()
 {
-    int c = (getchar() != EOF);
-	printf("getchar() != EOF equals %d\n", c);
+    int c;
+    while ((c = getchar()) != EOF)
+    {
+        printf("getchar() != EOF equals %d\n", c != EOF);
+    }
+    printf("getchar() != EOF equals %d\n", c != EOF);
 }
