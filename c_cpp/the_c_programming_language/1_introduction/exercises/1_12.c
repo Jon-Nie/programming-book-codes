@@ -3,16 +3,17 @@
 #define IN  1
 #define OUT 0
 
-void main()
+int main()
 {
-    int c, before;
+    int c, last;
     
-    while ((c = getchar()) != EOF) 
-    {
-        if ((c == ' ' || c == '\t'))
+    while ((c = getchar()) != EOF) {
+        if (c == ' ' || c == '\t') {
             c = '\n';
-        if (c != '\n' || before != '\n')
+        }
+        if (c != '\n' || last != '\n') {
             printf("%c", c);
-        before = c;
+        }
+        last = c;
     }
 }

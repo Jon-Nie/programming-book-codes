@@ -1,17 +1,19 @@
 #include <stdio.h>
 
-void main()
+int main()
 {
     int c, blanks, tabs, newlines;
     blanks = tabs = newlines = 0;
 
-    while ((c = getchar()) != EOF)
-        if (c == ' ')
+    while ((c = getchar()) != EOF) {
+        if (c == ' ') {
             blanks++;
-        else if (c == '\t')
+        } else if (c == '\t') {
             tabs++;
-        else if (c == '\n')
+        } else if (c == '\n') {
             newlines++;
+        }
+    }
     
     printf("Blanks: %d\n", blanks);
     printf("Tabs: %d\n", tabs);

@@ -1,23 +1,17 @@
 #include <stdio.h>
 
-void main()
+int main()
 {
     int c;
 
-    while ((c = getchar()) != EOF)
-    {
-        if (c == '\t')
-        {
+    while ((c = getchar()) != EOF) {
+        if (c == '\t') {
             putchar('\\');
             c = 't';
-        }
-        if (c == '\b')
-        {
+        } else if (c == '\b') {
             putchar('\\');
             c = 'b';
-        }
-        if (c == '\\')
-        {
+        } else if (c == '\\') {
             putchar('\\');
             c = '\\';
         }

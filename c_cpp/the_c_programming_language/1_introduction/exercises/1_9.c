@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-void main()
+int main()
 {
-    int c, before;
+    int c, last;
 
-    while ((c = getchar()) != EOF)
-    {
-        if (c != ' ' || before != ' ')
+    while ((c = getchar()) != EOF) {
+        if (c != ' ' || last != ' ') {
             putchar(c);
-        before = c;
+        }
+        last = c;
     }
 }

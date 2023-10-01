@@ -1,10 +1,9 @@
 #include <stdio.h>
 
-void main()
+int main()
 {
     int c;
-    while ((c = getchar()) != EOF)
-    {
+    while ((c = getchar()) != EOF) {
         printf("getchar() != EOF equals %d\n", c != EOF);
     }
     printf("getchar() != EOF equals %d\n", c != EOF);
