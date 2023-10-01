@@ -13,4 +13,6 @@ int main()
     printf("hello\?world\n");
     printf("hello\'world\n");
     printf("hello\"world\n");
+    printf("hello\43world\n");
+    printf("hello\x23world\n");
 }
