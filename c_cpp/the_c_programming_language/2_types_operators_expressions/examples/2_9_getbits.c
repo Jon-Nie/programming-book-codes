@@ -9,7 +9,7 @@ int main()
 {
     #define NUMBER      346
     #define BEGINNING   6
-    #define AMOUNT      8
+    #define AMOUNT      6
 
     if (AMOUNT > BEGINNING+1) {
         return -1;
