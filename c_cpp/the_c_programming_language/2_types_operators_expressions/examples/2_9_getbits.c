@@ -9,11 +9,11 @@ int main()
 {
     #define NUMBER      346
     #define BEGINNING   6
-    #define AMOUNT      4
+    #define AMOUNT      8
 
-    if (AMOUNT > BEGINNING) {
+    if (AMOUNT > BEGINNING+1) {
         return -1;
     }
 
-    printf("The %d bits from position %d to position %d of the number %d represent the number %d.", AMOUNT, BEGINNING, BEGINNING-AMOUNT+1, NUMBER, getbits(NUMBER, BEGINNING, AMOUNT));
+    printf("The %d bits from position %d to position %d of the number %d represent the number %d.", AMOUNT, BEGINNING-AMOUNT+1, BEGINNING, NUMBER, getbits(NUMBER, BEGINNING, AMOUNT));
 }
